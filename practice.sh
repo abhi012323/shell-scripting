@@ -1,12 +1,7 @@
 #!/bin/bash
-name="Abhi"
-echo "My name is $name"
-echo "$name" 
+#taking user input from read command
 
-company="Airtel"
-echo "I'm engineer in $company"
-echo "$company"
+read -p "What's your name: " name
+read -p "What's your company name: " company
 
-city="gurugram"
-echo "I'm based in $city"
-echo "$city"
+echo " Hello I'm $name and I'm engineer in $company"
