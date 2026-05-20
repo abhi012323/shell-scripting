@@ -1,10 +1,13 @@
 #!/bin/bash
-#Task: Ek calculator script banao jo user se do numbers maange, aur un dono ka Substraction (Minus -) aur Division (Divide /) karke output dikhaye.
+#loop for 1-10
 
-read -p "num1: " num1 
-read -p "num2: " num2
-Substraction=$((num1 - num2))
-Divide=$((num1 / num2))
-
-echo "Substraction of both numbers are  $Substraction"
-echo "Divide of both numbers are $Divide"
+for i in {1..10}
+do
+    # Check if remainder is 0
+    if [ $((i % 2)) -eq 0 ]
+    then
+        echo "$i is Even"
+    else
+        echo "$i is Odd"
+    fi
+done
